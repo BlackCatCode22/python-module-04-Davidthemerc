@@ -5,11 +5,8 @@ for line in han:
     #print('Line:',line)
     wds = line.split()
     #print('Words:',wds)
-    # Guardian Pattern (stronger)
-    if len(wds) < 3 :
-        continue
-    # Potentially faulty code (without guardian pattern)
-    if wds[0] != 'From' :
+    # Guardian Pattern in a compound statement
+    if len(wds) < 3 or wds[0] != 'From' :
         #print('Ignore')
         continue
     print (wds[2])
