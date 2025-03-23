@@ -17,3 +17,5 @@ for lin in hand:
             di[w] = 1
             print ('**NEW**')
         print(di[w])
+
+print(di)
