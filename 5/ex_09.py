@@ -10,13 +10,8 @@ for lin in hand:
     # print(wds)
     for w in wds:
 
-        # if the key is not there, the count is zero
-        oldcount = di.get(w,0)
-        print(w,'old',oldcount)
-        newcount = oldcount + 1
-        di[w] = newcount
-
-        print(w,'new',newcount)
-        # print(w,di[w])
+        # idiom: retrieve/create/update counter
+        di[w] = di.get(w,0) + 1
+        print(w,'new',di[w])
 
 print(di)
