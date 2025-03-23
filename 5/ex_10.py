@@ -22,4 +22,6 @@ for k,v in many.items() :
     newlist.append(tup)
 
 cool = sorted(newlist, reverse=True)
-print(cool)
+
+for v,k in cool[:5] :
+    print(k,v)
