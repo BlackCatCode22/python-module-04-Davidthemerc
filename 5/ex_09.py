@@ -9,9 +9,11 @@ for lin in hand:
     wds = lin.split()
     # print(wds)
     for w in wds:
+        print(w)
         if w in di :
             di[w] = di[w] + 1
+            print ('**Existing**')
         else:
             di[w] = 1
             print ('**NEW**')
-        print(w,di[w])
+        print(di[w])
