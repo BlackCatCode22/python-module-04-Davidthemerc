@@ -1,3 +1,5 @@
+from math import trunc
+
 fname = input('Enter File: ')
 if len(fname) < 1 : fname = 'clown.txt'
 hand = open(fname)
@@ -13,9 +15,11 @@ for lin in hand:
 
 # find the top 5 word by frequency
 
-print(many.items())
-
 tmp = dict()
+newlist = list()
 for k,v in many.items() :
     tup = (v,k)
-    print (tup)
+    newlist.append(tup)
+
+cool = sorted(newlist, reverse=True)
+print(cool)
