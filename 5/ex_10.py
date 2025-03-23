@@ -13,5 +13,9 @@ for lin in hand:
 
 # find the top 5 word by frequency
 
-print(many)
-print (sorted(many))
+print(many.items())
+
+tmp = dict()
+for k,v in many.items() :
+    tup = (v,k)
+    print (tup)
