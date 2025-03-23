@@ -13,11 +13,5 @@ for lin in hand:
 
 # find the top 5 word by frequency
 
-largest = None
-bigword = None
-for cle, valeur in many.items() :
-    if largest is None or valeur > largest :
-        largest = valeur
-        bigword = cle
-
-print(bigword,largest)
+print(many)
+print (sorted(many))
